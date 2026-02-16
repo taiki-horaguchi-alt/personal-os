@@ -1,0 +1,8 @@
+# System Files
+.DS_Store
+Thumbs.db
+*.log
+
+# Personal Data (Optional - if you want to keep some private)
+# 06_人生ログ/Diary/*.md
+# 09_振り返り/*.md

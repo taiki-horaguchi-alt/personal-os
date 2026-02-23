@@ -1,0 +1,11 @@
+Sample Conversation for Personal OS Extraction
+================================================================================
+
+This is a sample conversation that demonstrates the types of information that
+Personal OS prompts can extract. You can use this as a template for your own
+conversations.
+
+---
+
+User: I've been thinking a lot about who I am and what matters to me. Can we
+explore that together?

@@ -1,0 +1,142 @@
+{
+  "extraction_metadata": {
+    "analyzed_at": "2026-02-23T14:30:00Z",
+    "conversation_source": "ChatGPT conversation",
+    "conversation_length_turns": 12,
+    "total_extractions": 8,
+    "confidence_threshold": 0.70,
+    "notes": "Sample extraction demonstrating the typical output format and content"
+  },
+  "extractions": [
+    {
+      "id": "extraction_001",
+      "category": "01_コア・原則",
+      "file": "アイデンティティ.md",
+      "section": "核となるアイデンティティ",
+      "subsection": "自分の立ち位置",
+      "extracted_content": "Bridge between technical and business worlds - someone who translates complex ideas into actionable strategies",
+      "evidence": "User stated: 'I see myself as a translator between engineers and business people. I bridge the gap so both sides understand each other.'",
+      "conversation_context": "Discussion about professional identity and role in teams",
+      "confidence": 0.92,
+      "suggested_format": "**Technical-Business Bridge** - Translates between engineering and business perspectives to align teams around shared goals",
+      "existing_conflict": null,
+      "contradiction": false,
+      "requires_approval": false,
+      "notes": "Strong, repeated theme across conversation"
+    },
+    {
+      "id": "extraction_002",
+      "category": "02_価値観",
+      "file": "価値観リスト.md",
+      "section": "Tier 1: Core Values",
+      "extracted_content": "Impact and creating meaningful change outranks personal financial gain",
+      "evidence": "User: 'I'd take a pay cut to work on something that matters. Making money is important, but only after impact.'",
+      "conversation_context": "Career decision-making discussion",
+      "confidence": 0.88,
+      "suggested_format": "**Impact > Income** - Willing to trade financial optimization for work that creates meaningful change",
+      "requires_approval": false,
+      "notes": "Clear value hierarchy expressed"
+    },
+    {
+      "id": "extraction_003",
+      "category": "03_目標",
+      "file": "ビジョン.md",
+      "section": "10-year vision",
+      "extracted_content": "Building a sustainable company that solves real problems while maintaining deep team relationships and creative autonomy",
+      "evidence": "User: 'In 10 years, I want to have founded something meaningful. A place where people genuinely enjoy coming to work, not just for money but because the work matters.'",
+      "conversation_context": "Long-term aspirations discussion",
+      "confidence": 0.90,
+      "suggested_format": "Founding a purpose-driven company with a culture of deep collaboration and creative freedom",
+      "requires_approval": false,
+      "notes": "Integrates multiple values (impact, relationships, autonomy)"
+    },
+    {
+      "id": "extraction_004",
+      "category": "04_判断ロジック",
+      "file": "基本判断フレームワーク.md",
+      "section": "Decision-making framework",
+      "extracted_content": "1) Gut feeling about alignment with values, 2) Data on practical viability, 3) Impact potential, 4) Team fit",
+      "evidence": "User: 'I always start by feeling whether something aligns with what matters to me. Then I look at the numbers. Then I ask if it'll actually change something. Finally, will the team enjoy this?'",
+      "conversation_context": "How decisions are made in career and life",
+      "confidence": 0.85,
+      "suggested_format": "Framework: Values Alignment → Practical Viability → Impact Potential → Team Dynamics",
+      "requires_approval": false,
+      "notes": "Clear sequential process with emotional + rational components"
+    },
+    {
+      "id": "extraction_005",
+      "category": "07_スキル・資産",
+      "file": "スキル・能力.md",
+      "section": "Soft Skills",
+      "extracted_content": "Excellent at facilitating difficult conversations and finding common ground between opposing viewpoints",
+      "evidence": "User: 'People often come to me when there's conflict. I can usually find what both sides actually want and help them see they're not as opposed as they thought.'",
+      "conversation_context": "Discussing strengths and how others perceive them",
+      "confidence": 0.87,
+      "suggested_format": "**Conflict Resolution & Mediation** - Skilled at facilitating conversations that reveal common ground",
+      "requires_approval": false,
+      "notes": "Demonstrated through specific examples"
+    },
+    {
+      "id": "extraction_006",
+      "category": "08_リスクと失敗",
+      "file": "失敗した判断.md",
+      "section": "Failure log",
+      "extracted_content": "Overcommitted to a project that sounded impactful without assessing team capacity, resulting in burnout and missed deadlines",
+      "evidence": "User: 'Last year I signed us up for an ambitious project. It seemed so important. But I didn't think through whether we had the people for it. Everyone burned out, we missed the deadline, and the client was unhappy. I learned I need to say no to exciting things if the team isn't ready.'",
+      "conversation_context": "Learning from past mistakes",
+      "confidence": 0.89,
+      "suggested_format": "#### Overcommitment Without Capacity Planning\n**Situation:** Committed team to ambitious project without assessing capacity\n**Learning:** Impact potential must be balanced against realistic team capacity\n**Prevention:** Assess team readiness before committing to new projects",
+      "requires_approval": false,
+      "notes": "Clear cause-effect and learning point"
+    },
+    {
+      "id": "extraction_007",
+      "category": "11_性格プロファイル",
+      "file": "ビッグファイブ分析.md",
+      "section": "Personality traits",
+      "extracted_content": "High openness to new ideas and experiences; high conscientiousness; high agreeableness (wants harmony)",
+      "evidence": "User: 'I get excited by new possibilities' and 'I'm organized to a fault' and 'I really care about how people feel'",
+      "conversation_context": "Self-description of personality",
+      "confidence": 0.78,
+      "suggested_format": "Big Five: Openness (High), Conscientiousness (High), Extraversion (Medium), Agreeableness (High), Neuroticism (Low-Medium)",
+      "requires_approval": false,
+      "notes": "Moderate confidence - Big Five traits not explicitly named"
+    },
+    {
+      "id": "extraction_008",
+      "category": "12_影響を受けたもの",
+      "file": "README.md",
+      "section": "People and ideas",
+      "extracted_content": "Influenced by Steven Johnson's writing on innovation and complex systems thinking; mentored by experienced startup founder who emphasized culture over metrics",
+      "evidence": "User: 'I read Johnson's stuff on how ideas actually emerge, not the lone genius myth. And my mentor always said success is built on people, not spreadsheets.'",
+      "conversation_context": "Intellectual and personal influences",
+      "confidence": 0.82,
+      "suggested_format": "**Steven Johnson** - \"Emergence\" and systems thinking influenced approach to innovation\n**Startup Mentor** - Prioritizes culture and relationships over pure metrics",
+      "requires_approval": false,
+      "notes": "Paraphrased from conversation"
+    }
+  ],
+  "summary": {
+    "strongest_themes": [
+      "Bridging technical and business worlds",
+      "Impact-driven decision making",
+      "Building meaningful, healthy organizations",
+      "Collaborative problem-solving over individual heroics",
+      "Balance between ambitious vision and realistic execution"
+    ],
+    "missing_data": [
+      "Short-term goals (1-3 months) not discussed",
+      "Specific skills with proficiency levels not detailed",
+      "Personal constraints (time, location, financial) not explored",
+      "Emotional triggers (what demotivates or frustrates) unclear",
+      "Daily/weekly routines not mentioned"
+    ],
+    "recommendations": [
+      "Ask about concrete 1-3 month goals to operationalize the vision",
+      "Explore what specific situations cause burnout or frustration",
+      "Discuss time availability and resource constraints",
+      "Get more specific on technical and business skills proficiency",
+      "Discuss emotional highs and lows throughout typical week"
+    ]
+  }
+}

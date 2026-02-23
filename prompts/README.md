@@ -8,110 +8,117 @@
 - **構造化データを生成** - JSON形式で整理されたデータを出力
 - **Claude Code で簡単インポート** - JSONを貼り付けるだけで Personal OS ファイルに追記
 
-## 🚀 クイックスタート（3ステップ）
+---
 
-### Step 1: ChatGPT でプロンプトを実行
-1. [master-prompt.md](./master-prompt.md) をコピー
-2. ChatGPT に貼り付け
-3. あなたの会話履歴を追加
-   ```
-   [マスタープロンプトをここに貼り付け]
+## 🚀 推奨される使い方：12 回に分けて実行
 
-   ---以下、あなたの会話です---
+**各カテゴリを 1 つずつ深掘りして、計 12 回実行します。**
 
-   [会話履歴をここに貼り付け]
-   ```
+### なぜ 12 回に分ける？
 
-### Step 2: JSON 出力を取得
-ChatGPT が構造化された JSON を出力します（このフォーマット）：
-```json
-{
-  "extraction_metadata": { ... },
-  "extractions": [ ... ],
-  "summary": { ... }
-}
+| 方式 | メリット | デメリット |
+|------|---------|---------|
+| Master Prompt（1回） | 時間が短い | 各カテゴリが浅くなりやすい |
+| **Category Prompts（12回）⭐推奨** | **各カテゴリを深掘りできる** | 時間がかかる |
+
+**深さの比較：**
+```
+❌ Master Prompt での「目標」（1回で全カテゴリ）
+「10年ビジョン：AI 企業を立ち上げたい」（短い）
+
+✅ Category Prompt 03-goals での「目標」（1 回で 1 カテゴリ）
+「10年ビジョン：AI を民主化する企業を立ち上げたい。
+ 理由：『技術は一部の専門家だけのものではない』という信念
+ 成功指標：『非技術者でも使えること』
+ 現在の課題：資金調達、初期チーム構築
+ 今年のマイルストーン：MVP 完成
+ 実現への障害：開発リソース不足」（詳しい、背景がある）
+```
+
+---
+
+## 📅 実行スケジュール（推奨例）
+
+```
+【Week 1】  01_Core Principles
+【Week 2】  02_Values
+【Week 3】  03_Goals
+【Week 4】  04_Decision Logic
+【Week 5】  05_Constraints
+【Week 6】  06_Life Log
+【Week 7】  07_Skills & Assets
+【Week 8】  08_Risks & Failures
+【Week 9】  09_Reflection
+【Week 10】 10_Personal History
+【Week 11】 11_Personality Profile
+【Week 12】 12_Influences
+
+完了！ Personal OS が 12 カテゴリすべて蓄積される ✅
+```
+
+---
+
+## 1 回の実行フロー（例：Week 1 - Core Principles）
+
+### Step 1: プロンプトをコピー
+
+```
+[category-prompts/01-core-principles.md] を開く
+→ 全文をコピー（Ctrl+A, Ctrl+C）
+```
+
+### Step 2: ChatGPT で実行
+
+```
+1. ChatGPT で新規チャット
+2. [01-core-principles.md のプロンプト] を貼り付け
+3. 「---以下、あなたの会話です---」の下に、
+   あなたのアイデンティティについての会話を貼り付け
+4. 送信 → ChatGPT が JSON を出力
 ```
 
 ### Step 3: Claude Code でインポート
-Claude Code に JSON を貼り付けて実行：
+
 ```
-Import this Personal OS data: [JSONをここに貼り付け]
+Claude Code に以下をコピー&ペースト：
+
+Import this Personal OS data: [ChatGPT から取得した JSON]
 ```
 
-Claude Code がファイルに自動追記します。
+Claude Code が自動的に `01_コア・原則/` ファイルに追記 ✅
 
 ---
 
-## 📚 プロンプトの種類
+## 📚 プロンプト一覧
 
-### Master Prompt
-**ファイル:** [master-prompt.md](./master-prompt.md)
+### 12 カテゴリの Category-Specific Prompts
 
-全 12 カテゴリに対応した統合プロンプト。1 つのプロンプトで全体を分析したいときに使用。
-
-**特徴:**
-- 12 カテゴリの全検出パターンを含む
-- JSON スキーマ準拠の出力
-- 信頼度スコア付き
-- 根拠（エビデンス）の自動記載
-
----
-
-### Category-Specific Prompts
-**フォルダ:** [category-prompts/](./category-prompts/)
-
-各カテゴリに特化した深掘りプロンプト。特定のカテゴリをより詳しく分析したいときに使用。
-
-#### 12 カテゴリ
-
-1. **[01-core-principles.md](./category-prompts/01-core-principles.md)** - あなたのアイデンティティ、信念、美学
-2. **[02-values.md](./category-prompts/02-values.md)** - 価値観階層、人生で大事なもの
-3. **[03-goals.md](./category-prompts/03-goals.md)** - ビジョン、目標、夢
-4. **[04-decision-logic.md](./category-prompts/04-decision-logic.md)** - 判断フレームワーク
-5. **[05-constraints.md](./category-prompts/05-constraints.md)** - 制約条件、限界
-6. **[06-life-log.md](./category-prompts/06-life-log.md)** - 最近の出来事、学び
-7. **[07-skills.md](./category-prompts/07-skills.md)** - スキル、強み、人脈
-8. **[08-risks-failures.md](./category-prompts/08-risks-failures.md)** - 失敗、盲点、教訓
-9. **[09-reflection.md](./category-prompts/09-reflection.md)** - 振り返り、パターン認識
-10. **[10-personal-history.md](./category-prompts/10-personal-history.md)** - 自分史、キャリア
-11. **[11-personality.md](./category-prompts/11-personality.md)** - 性格、気質
-12. **[12-influences.md](./category-prompts/12-influences.md)** - 影響を受けた人、本、アイデア
+| # | ファイル | 説明 | 実行タイミング |
+|---|---------|------|---------------|
+| 01 | [01-core-principles.md](./category-prompts/01-core-principles.md) | アイデンティティ、信念、美学 | Week 1 |
+| 02 | [02-values.md](./category-prompts/02-values.md) | 価値観階層、人生で大事なもの | Week 2 |
+| 03 | [03-goals.md](./category-prompts/03-goals.md) | ビジョン、目標、夢 | Week 3 |
+| 04 | [04-decision-logic.md](./category-prompts/04-decision-logic.md) | 判断フレームワーク | Week 4 |
+| 05 | [05-constraints.md](./category-prompts/05-constraints.md) | 制約条件、限界 | Week 5 |
+| 06 | [06-life-log.md](./category-prompts/06-life-log.md) | 最近の出来事、学び | Week 6 |
+| 07 | [07-skills.md](./category-prompts/07-skills.md) | スキル、強み、人脈 | Week 7 |
+| 08 | [08-risks-failures.md](./category-prompts/08-risks-failures.md) | 失敗、盲点、教訓 | Week 8 |
+| 09 | [09-reflection.md](./category-prompts/09-reflection.md) | 振り返り、パターン認識 | Week 9 |
+| 10 | [10-personal-history.md](./category-prompts/10-personal-history.md) | 自分史、キャリア | Week 10 |
+| 11 | [11-personality.md](./category-prompts/11-personality.md) | 性格、気質 | Week 11 |
+| 12 | [12-influences.md](./category-prompts/12-influences.md) | 影響を受けた人、本、アイデア | Week 12 |
 
 ---
 
-## 💡 使い方ガイド
+## 📖 参考：Master Prompt について
 
-### パターン 1: 全体分析（Master Prompt を使う場合）
+[master-prompt.md](./master-prompt.md) は全 12 カテゴリに対応した統合プロンプトです。
 
-**推奨:** 初期セットアップ時や大きな転機のとき
+**用途:**
+- 初期セットアップ時に全体を一度に見たい場合
+- 時間がない場合の緊急用
 
-```
-1. [master-prompt.md](./master-prompt.md) をコピー
-2. ChatGPT に貼り付けて実行
-3. 全 12 カテゴリの JSON を取得
-4. Claude Code でインポート
-```
-
-### パターン 2: 深掘り分析（Category-Specific Prompt を使う場合）
-
-**推奨:** 特定の分野をより詳しく掘り下げたいとき
-
-```
-1. 特定カテゴリの Prompt をコピー
-   例: [03-goals.md](./category-prompts/03-goals.md)
-2. ChatGPT に貼り付けて実行
-3. そのカテゴリに特化した JSON を取得
-4. Claude Code でインポート
-```
-
-### パターン 3: 連続分析（複数の Prompt を組み合わせる場合）
-
-**推奨:** 毎週・毎月、特定の Prompt を定期的に実行
-
-例えば毎月：
-- 月初: [03-goals.md](./category-prompts/03-goals.md) で目標進捗を確認
-- 月中: [08-risks-failures.md](./category-prompts/08-risks-failures.md) で学びを記録
-- 月末: [09-reflection.md](./category-prompts/09-reflection.md) で振り返り
+**注意:** 1 回で全部やろうとすると、各カテゴリが浅くなりやすいため、通常は Category-Specific Prompts の使用を推奨します。
 
 ---
 
@@ -168,22 +175,32 @@ JSON を受け取った Claude Code は以下を実行します：
 - 価値観や信念を明示的に述べている
 - 同じアイデアが複数回確認されている
 - 感情的な言語を使っている（「好き」「嫌い」など）
-- 明確な対比がある（「X より Y を優先」など）
+- 「なぜ」が複数回聞かれている
 
 ### ❌ 避けるべき会話
 - 曖昧な仮定法（「もしかしたら...」）
 - 他人の話を自分のものと混同
 - 純粋な事実情報（文脈なし）
 - 矛盾した発言（明確化なし）
+- 1 文で終わる説明
 
 ### 💡 抽出を改善するためのコツ
 
-**特に効果的な質問:**
-- "あなたの核となる価値観は何ですか？"
-- "10 年後、あなたはどうなっていたいですか？"
-- "最大の失敗は何で、何を学びましたか？"
-- "どのようにして重要な決断をしますか？"
-- "誇りに思うスキルは何ですか？"
+**各カテゴリプロンプトに組み込まれた「Why x3」フレームワーク:**
+
+```
+Q: 「あなたの価値観は？」
+A: 「成長が大事」
+
+Q: 「なぜ？」（Why 1）
+A: 「新しいことを学ぶのが好きだから」
+
+Q: 「なぜ学ぶのが好き？」（Why 2）
+A: 「世界がより理解できるようになるから」
+
+Q: 「なぜそれが重要？」（Why 3）
+A: 「人生の質が変わるから。具体的には 2023 年に XX に挑戦して...」
+```
 
 ---
 
@@ -208,8 +225,8 @@ Claude Code がインポートする際：
 ```
 prompts/
 ├── README.md                              # このファイル
-├── master-prompt.md                       # 統合抽出プロンプト
-├── category-prompts/                      # カテゴリ別プロンプト
+├── master-prompt.md                       # 統合抽出プロンプト（参考）
+├── category-prompts/                      # ⭐ カテゴリ別プロンプト（推奨）
 │   ├── 01-core-principles.md
 │   ├── 02-values.md
 │   ├── 03-goals.md
@@ -235,8 +252,8 @@ prompts/
 
 ## 🆘 よくある質問
 
-### Q: どのプロンプトから始めるべき？
-**A:** Master Prompt から始めることをお勧めします。初期セットアップ時には全 12 カテゴリを一度に分析するのが効率的です。その後は Category-Specific Prompts で定期的に更新します。
+### Q: Master Prompt と Category Prompts、どっちを使う？
+**A:** Category Prompts を推奨します。1 カテゴリ 1 回で深掘りできるため、より詳細で質の高いデータが得られます。12 週間で完成させるイメージです。
 
 ### Q: ChatGPT と Claude どちらで実行する？
 **A:** このプロンプト集は ChatGPT 用です。分析結果を Claude Code に渡してインポートします。
@@ -247,17 +264,27 @@ prompts/
 ### Q: 既存の Personal OS データを上書きされない？
 **A:** 安心してください。すべて**追記モード**です。既存のデータは保持され、新しい情報が追加されるだけです。
 
+### Q: 1 週間に複数カテゴリやってもいい？
+**A:** もちろんです。スケジュールはガイドなので、好きなペースで進めてください。
+
 ---
 
 ## 🔗 関連リソース
 
 - [Personal OS 本体](../README.md) - メインリポジトリ
+- [how-to-use.md](./guides/how-to-use.md) - 詳細な使い方ガイド
 - [Auto-Learning Guide](../00_Auto_Learning_Guide.md) - 自動学習のフレームワーク
 - [Portfolio](https://portfolio1-chi-rouge.vercel.app) - Personal OS の紹介
 
 ---
 
 ## 📝 Version History
+
+### v1.1.0 (2026-02-23)
+- **推奨方法を変更**: Master Prompt（1回）→ Category Prompts（12回）に
+- 12 週間スケジュールを追加
+- 各週での実行フロー を明確化
+- 深さの比較表を追加
 
 ### v1.0.0 (2026-02-23)
 - Initial release
@@ -271,4 +298,4 @@ prompts/
 
 問題が発生した場合や改善提案がある場合は、GitHub の Issue で報告してください。
 
-**Happy extracting! 🚀**
+**12 週間で Personal OS を完成させよう！ 🚀**

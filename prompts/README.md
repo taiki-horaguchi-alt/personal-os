@@ -10,7 +10,57 @@
 
 ---
 
-## 🚀 推奨される使い方：12 回に分けて実行
+## ⭐ 最新アプローチ：Interactive Analysis（推奨）
+
+**過去の会話から、あなたの心理・人格を Claude Code が自動推測します。**
+
+### こんな流れ
+
+```
+You: 「これまでの会話から、私の Core Principles を分析してください」
+     [過去の会話履歴を貼り付け]
+
+Claude Code: 分析を実行
+     ↓
+Output: 結果だけを Markdown で返す（JSON なし）
+     ↓
+You: 「Personal OS に追加して」
+     ↓
+自動追記 ✅
+```
+
+### 利点
+
+- ✅ **結果だけが出てくる** - 複雑な説明なし
+- ✅ **双方向** - Claude Code が分析、あなたが確認
+- ✅ **高速** - 複数カテゴリを一度に分析可能
+- ✅ **そのまま使える** - Markdown 形式で Personal OS ファイルに直接追記
+
+### 対応カテゴリ
+
+[interactive-prompts/](./interactive-prompts/) に 3 つのプロンプトを用意（順次追加予定）：
+
+| # | ファイル | 説明 |
+|---|---------|------|
+| 01 | [01-core-principles-interactive.md](./interactive-prompts/01-core-principles-interactive.md) | あなたのアイデンティティ、信念、美学を推測 |
+| 03 | [03-goals-interactive.md](./interactive-prompts/03-goals-interactive.md) | ビジョンと目標を推測 |
+| 08 | [08-risks-failures-interactive.md](./interactive-prompts/08-risks-failures-interactive.md) | 失敗パターンと学びを推測 |
+
+### 使い方
+
+```
+1. Interactive Prompt を選ぶ
+2. Claude Code に貼り付け
+3. 「以下の会話から [カテゴリ] を分析してください：
+   [あなたの会話履歴]」
+4. Claude Code が Markdown で結果を返す
+5. 確認して「Personal OS に追加して」
+6. 自動追記完了 ✅
+```
+
+---
+
+## 🚀 従来のアプローチ：12 回に分けて実行
 
 **各カテゴリを 1 つずつ深掘りして、計 12 回実行します。**
 

@@ -6,35 +6,56 @@ Extract deep insights about **who you are** at your core: your identity, values,
 
 ---
 
-## Key Questions to Answer
+## Key Questions to Answer - 深掘り版
 
 ### Identity & Positioning (アイデンティティ)
-- **How do you describe yourself in one sentence?** (If someone asked "Who are you?", what's your answer?)
-- **What roles or titles matter most to you?** (Professional, personal, social roles)
-- **What do you want to be known for?**
-- **What's your unique perspective or angle?**
-- **How do you want to be remembered?**
 
-**Listen for:**
-- "I'm the person who..."
-- "I'm known for..."
-- "My brand is..."
-- Identity metaphors ("I'm a bridge between...", "I'm the glue that...")
+**Q1: How do you describe yourself in one sentence?**
+- Follow-up: 「なぜそう思う？」「誰がそう見ている？」「いつからそう考えている？」
+
+**Q2: What roles or titles matter most to you?** (Professional, personal, social roles)
+- Follow-up: 「なぜそのロール？」「やらされているのか、やりたいのか？」「それをやることで何を成し遂げたい？」「今、それにどのくらい時間を使っている？」
+
+**Q3: What do you want to be known for?** (Legacy, impact)
+- Follow-up: 「具体的には？」「人生の終わりに振り返って何を達成したい？」「今の行動はそれに向かっている？」「邪魔になっているものは？」
+
+**Q4: What's your unique perspective or angle?** (What do you see that others don't?)
+- Follow-up: 「なぜそう見える？」「経験は？」「誰がそれに気づいた？」「それが活きた場面は？」
+
+**Q5: How do you want to be remembered?** (Character traits, impact)
+- Follow-up: 「どういう場面で？」「誰に覚えていてほしい？」「今、それに向かっている？」「完全には達成していない理由は？」
+
+**Listen for patterns:**
+- "I'm the person who..." → 「その根拠？実例？何回そう言われた？」
+- "I'm known for..." → 「誰に知られている？いつからそう見られている？意図的か自然か？」
+- "My brand is..." → 「ブランドをどう構築した？その構築過程は？失敗は？」
+- Identity metaphors ("I'm a bridge...", "I'm the glue...") → 「なぜそのメタファー？具体的には何と何をつなぐ？その役割でどう成功したか？」
+- **最小要件:** 各セクションで 150 文字以上、背景と根拠を含める
 
 ---
 
 ### Values & Aesthetics (美学・価値観)
-- **What feels beautiful or elegant to you?** (In code, design, nature, relationships, work)
-- **What feels ugly or offensive?**
-- **What would you never compromise on?** (Non-negotiables)
-- **What do you stand for?**
-- **If you could change one thing about the world, what would it be?**
 
-**Listen for:**
-- "Beautiful to me is..."
-- "I absolutely can't stand..."
-- "Elegance means..."
-- "Aesthetic preference is..."
+**Q1: What feels beautiful or elegant to you?** (In code, design, nature, relationships, work)
+- Follow-up: 「なぜそれが美しい？」「誰も同意する？」「醜いものの対比は？」「その美学がないと何が起きる？」
+
+**Q2: What feels ugly or offensive?** (What's the opposite of beautiful?)
+- Follow-up: 「なぜそれが許せない？」「その相手にどう対応する？」「我慢したことは？」「結果は？」
+
+**Q3: What would you never compromise on?** (Non-negotiables)
+- Follow-up: 「理由は？」「例外はあるか？」「それを守るために何を失ったことがある？」「後悔していないか？」
+
+**Q4: What do you stand for?** (Principles, causes)
+- Follow-up: 「なぜそこまで？」「行動に移しているか？」「周囲の反対は？」「今のキャリアはそれに向かっているか？」
+
+**Q5: If you could change one thing about the world, what would it be?**
+- Follow-up: 「なぜそれ？」「その問題を見たことは？」「自分は何ができる？」「今、それをしているか？」
+
+**Listen for patterns (最小 200 文字以上):**
+- "Beautiful to me is..." → 「具体例？場面は？その美しさが損なわれたらどう？」
+- "I absolutely can't stand..." → 「実例？その時どうした？今は？」
+- "Elegance means..." → 「そこに至るまでの経験？」
+- "Aesthetic preference is..." → 「いつからそう？影響？活かしている場面？」
 
 ---
 
